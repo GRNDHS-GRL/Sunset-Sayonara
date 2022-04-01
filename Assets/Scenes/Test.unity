@@ -157,6 +157,7 @@ MonoBehaviour:
   countDown: 1
   hasLimit: 1
   timerLimit: 0
+  myCycle: {fileID: 0}
 --- !u!4 &226976423
 Transform:
   m_ObjectHideFlags: 0
@@ -464,7 +465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Timer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ec23c7a158d68044a74844a01cfe8c5, type: 2}
   m_sharedMaterial: {fileID: 3865211057039521371, guid: 0ec23c7a158d68044a74844a01cfe8c5, type: 2}
@@ -491,7 +492,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.7
+  m_fontSize: 57.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
