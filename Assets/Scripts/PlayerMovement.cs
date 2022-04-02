@@ -10,9 +10,15 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
+    public bool dialogueCheck = false;
+    public bool inConvo = false;
+
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+    public Tester tester;
+    public DialogueManager dM;
+
 
     Vector3 velocity;
     bool isGrounded;
@@ -37,6 +43,27 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
+
+        if(Input.GetButtonDown("Interact") && dialogueCheck == true)
+        {
+            tester.StartConvo();
+            inConvo = true;
+        }
+
+        if(inConvo == true)
+        {
+            dialogueCheck = false;
+        }
+        else if(inConvo == false)
+        {
+            //dialogueCheck = true;
+        }
+
+
+        if (inConvo == true && Input.GetButtonDown("Interact"))
+        {
+            dM.ReadNext();
         }
 
         velocity.y += gravity * Time.deltaTime;

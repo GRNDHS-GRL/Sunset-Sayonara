@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c3bb6d1df226f46b312358ec967c7f, type: 3}
+  m_Name: CryFace1
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 5afc15f4686f7d14c83c66f54f676b21, type: 2}
+    dialogue: Excuse me, I was wondering if-
+  - speaker: {fileID: 11400000, guid: 5afc15f4686f7d14c83c66f54f676b21, type: 2}
+    dialogue: Excuse me, I was wondering if-
+  - speaker: {fileID: 11400000, guid: 2fec394e9d7dfa1498402783df3e69dc, type: 2}
+    dialogue: PISS OFF CUNT, I LOVE LEAAAAAAAN!!!!
+  - speaker: {fileID: 11400000, guid: 5afc15f4686f7d14c83c66f54f676b21, type: 2}
+    dialogue: O-oh umm...ok...
